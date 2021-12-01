@@ -8,7 +8,7 @@ router = DefaultRouter()
 router.register("items", TestModelViewSet)
 
 urlpatterns = [
-    path('<int:test_id>/show/', TestTemplateView)
+    path('<int:test_id>/show/', TestTemplateView.as_view())
 ]
 
 urlpatterns += router.urls

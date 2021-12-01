@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 from rest_framework import viewsets
 
+from config.settings import BASE_DIR
 from trials.models import Test
 from trials.serializers import TestSerializer
 
@@ -13,12 +14,12 @@ class TestModelViewSet(viewsets.ModelViewSet):
 class TestTemplateView(TemplateView):
 
     permission_classes = []
-    template_name = f"generic_test.html"
+    template_name = BASE_DIR + f"/templates/generic_test.html"
 
     def get_queryset(self):
         return Test.objects.all()
 
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, test_id, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["test"] = self.get_queryset().first
+        context["test"] = self.get_queryset().filter(id=test_id).prefetch_related("questions__answers").first()
         return context

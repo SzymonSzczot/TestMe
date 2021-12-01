@@ -6,7 +6,7 @@ from trials.models import Test
 
 class TestSerializer(serializers.ModelSerializer):
 
-    questions = QuestionSerializer(many=True)
+    questions = QuestionSerializer(many=True, required=False)
 
     class Meta:
         model = Test
