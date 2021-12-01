@@ -1,8 +1,8 @@
 from rest_framework.routers import DefaultRouter
 
-from trials.views import TestModelViewSet
+from answers.views import AnswerModelViewSet
 
 router = DefaultRouter()
-router.register("items", TestModelViewSet)
+router.register("items", AnswerModelViewSet)
 
 urlpatterns = router.urls
