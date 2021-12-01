@@ -13,6 +13,8 @@ class User(AbstractBaseUser):
     reset_code = models.CharField(max_length=100)
     avatar = models.ImageField(upload_to="avatars/", null=True)
 
+    USERNAME_FIELD = "email"
+
     class Meta:
         ordering = ("id", )
     
