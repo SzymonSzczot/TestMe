@@ -44,7 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
     "django.contrib.gis",
+    "rest_framework",
 
+    "users",
+    "trials",
+    "answers",
+    "questions"
 ]
 
 MIDDLEWARE = [
@@ -53,7 +58,6 @@ MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'utils.middlewares.LogHistoryMiddleware',
 ]
 
 ROOT_URLCONF = get_secret("ROOT_URLCONF")
@@ -61,7 +65,7 @@ ROOT_URLCONF = get_secret("ROOT_URLCONF")
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': os.path.join(BASE_DIR, "templates"),
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -96,12 +100,11 @@ DATABASES = {
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": (
         "rest_framework.permissions.IsAuthenticated",
-        "users.permissions.IsMainAppUser",
     ),
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
-    "DEFAULT_PAGINATION_CLASS": "utils.paginations.MiloPagination",
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
     "DEFAULT_FILTER_BACKENDS": (
         "django_filters.rest_framework.DjangoFilterBackend",
         "rest_framework.filters.SearchFilter",
