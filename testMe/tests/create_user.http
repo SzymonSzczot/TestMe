@@ -1,0 +1,8 @@
+POST http://localhost:8000/users/items
+
+{
+"first_name": "Szymon",
+"last_name": "Szczot",
+"email": "email@example.com",
+"password": "iiiiiiiiii"
+}
