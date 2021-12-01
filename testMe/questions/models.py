@@ -10,6 +10,7 @@ class Question(models.Model):
     )
     name = models.CharField(max_length=200, default="")
     description = models.TextField()
+    points = models.PositiveSmallIntegerField(default=1)
 
     def get_answers_secret(self):
         return [
