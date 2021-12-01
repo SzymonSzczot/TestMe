@@ -13,5 +13,6 @@ class TestSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "name",
+            "passing_score",
             "questions"
         )
