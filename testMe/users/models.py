@@ -1,5 +1,6 @@
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.db import models
+from .managers import UserManager
 
 
 class User(AbstractBaseUser):
@@ -17,6 +18,8 @@ class User(AbstractBaseUser):
 
     class Meta:
         ordering = ("id", )
+
+    objects = UserManager()
     
     def get_details(self):
         return {
