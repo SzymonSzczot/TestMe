@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load rest_framework %}
+
+{% block title %}{{ test.name }} - Edit{% endblock  %}
+
+{% block additional_head %}
+    <meta charset="UTF-8">
+{% endblock  %}
+
+{% block content %}
+    <div class="editContainer">
+        <form method="post" novalidate>
+            <div class="editContainerSection">
+                <div class="editContainerLine">
+                    <label for="name"><h2>Name:</h2></label>
+                    <input id="name" type="text" name="name" value="New test">
+                </div>
+            </div>
+            {% for question in test.questions.all %}
+                <div class="editContainerSection">
+                    <div class="editContainerLine">
+                        <label for="desc"><b>Description:</b></label>
+                        <input id="desc" type="text" name="desc", value="{{ question.description }}">
+                    </div>
+                    {% for answer in question.answers.all %}
+                        <div class="editContainerLine">
+                            <label for="ans-{{ forloop.counter }}">Answer {{ forloop.counter }}: </label>
+                            <input id="ans-{{ forloop.counter }}" type="text" name="ans-{{ forloop.counter }}", value="{{ answer.description }}">
+                        </div>
+                    {% endfor %}
+                    <div class="editContainerLine">
+                        <label for="category">Correct: </label>
+                        <select name="category" id="category">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="testContent">
+                <input type="submit" value="Edit test">
+            </div>
+        </form>
+    </div>
+{% endblock  %}
+

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}My Tests{% endblock  %}
+
+{% block content %}
+    <h1>Check your tests</h1>
+        {% for test in tests %}
+            <div class="mainTestContainer">
+                <div class="mainTestName">
+                    {{test.name}}
+                </div>
+                <div class="mainTestMeta">
+                    <div class="left">Category: {{test.category}}</div>
+                    <div class="center">Passing score: {{test.passing_score}}</div>
+                    <div class="right">Questions: {{test.questions|length}}</div>
+                </div>
+                <div class="mainTestDesc">
+<!--                    TODO 250 words limit-->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat scelerisque tortor, id sodales leo finibus id. Vivamus id viverra nunc, ac faucibus metus. Nulla a mauris imperdiet sapien lobortis dapibus. Quisque ornare posuere pulvinar.
+                </div>
+                <div class="doubleButton">
+                    <button><a href="/tests/{{test.id}}/show">Start</a></button>
+                    <button><a href="/tests/{{test.id}}/edit">Edit</a></button>
+                </div>
+            </div>
+            <br>
+        {% endfor %}
+{% endblock  %}
+

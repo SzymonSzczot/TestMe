@@ -1,0 +1,24 @@
+{% extends "authBase.html" %}
+
+{% block title %}Login{% endblock  %}
+
+{% block content %}
+    <h2>Log In</h2>
+    <form method="post"> {% csrf_token %}
+
+        {% for field in login_form %}
+            <p>
+                {{field.label_tag}}
+                {{field}}
+                {% for error in field.errors %}
+                    <p style="color: red;">{{error}}</p>
+                {% endfor %}
+            </p>
+        {% endfor %}
+        <input type="submit" value="Login">
+        <div class="linkDefault">
+            <a href="{% url 'resetPassword' %}">Reset password</a>
+        </div>
+    </form>
+{% endblock  %}
+

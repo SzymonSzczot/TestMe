@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load filters %}
+{% load rest_framework %}
+
+{% block title %}New Test{% endblock  %}
+{% block content %}
+    <div class="newContainer">
+        <form method="post">
+            <h1>Create test</h1>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name" value="New test">
+            <br>
+            <br>
+            <label for="category">Category: </label>
+            <select name="category" id="category">
+                <option value="JezykPolski">Język Polski</option>
+                <option value="JezykAngielski">Język Angielski</option>
+                <option value="JezykNiemiecki">Język Niemiecki</option>
+                <option value="Matematyka">Matematyka</option>
+                <option value="Informatyka">Informatyka</option>
+                <option value="Fizyka">Fizyka</option>
+                <option value="Chemia">Chemia</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Historia">Historia</option>
+            </select>
+            <br>
+            <br>
+            <label for="questions">Number of questions: </label>
+            <input id="questions" type="number" name="questions" value="2">
+            <br>
+            <br>
+            <label for="passing">Passing score: </label>
+            <input id="passing" type="number" name="passing" value="5">
+            <br>
+            <br>
+            <a href='' onclick="this.href='questions?passing='+document.getElementById('passing').value + '&name=' +document.getElementById('name').value + '&catgory='+document.getElementById('category').value+'&number_of_questions='+document.getElementById('questions').value">Dodaj pytania</a>
+        </form>
+    </div>
+{% endblock  %}

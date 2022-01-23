@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Update name{% endblock  %}
+
+{% block content %}
+    <div class="accountInfoContainer ">
+        <form method="post">
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" required><br><br>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="First Name" required><br><br>
+            <input type="submit" value="Change name"><br><br>
+        </form>
+        <a class="returnLink" href="{% url 'account' %}">Back to dashboard</a>
+    </div>
+{% endblock  %}

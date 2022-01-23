@@ -1,0 +1,124 @@
+{
+    "name": "Matematyka 1",
+    "passing_score": 3,
+    "questions": [
+        {
+            "name": "jaki jest wzór na pole powierzchni prostopadłościanu?",
+            "description": "ramię głowicy",
+            "answers": [
+                {
+                    "description": "P = a*b*c",
+                    "is_correct": false
+                },
+                {
+                    "description": "P = 2(a*b+b*c+a*c)",
+                    "is_correct": true
+                },
+                {
+                    "description": "P = a*b + b*c + a*c",
+                    "is_correct": false
+                },
+                {
+                    "description": "P = 2*a*b*c",
+                    "is_correct": false
+                }
+
+            ]
+        },
+        {
+            "name": "ile wynosi pole kwadratu o boku długości 4cm",
+            "description": "złącze.",
+            "answers": [
+                {
+                    "description": "12",
+                    "is_correct": false
+                },
+                {
+                    "description": "8",
+                    "is_correct": false
+                },
+                {
+                    "description": "16",
+                    "is_correct": false
+                },
+                {
+                    "description": "20",
+                    "is_correct": false
+                }
+
+            ]
+        },
+        {
+            "name": "ile wynosi objętość prostopadłościanu o wymiarach a=4, b=3,c=8",
+            "description": "kieszeń napędu",
+            "answers": [
+                {
+                    "description": "56",
+                    "is_correct": false
+                },
+                {
+                    "description": "96",
+                    "is_correct": true
+                },
+                {
+                    "description": "82",
+                    "is_correct": false
+                },
+                {
+                    "description": "106",
+                    "is_correct": false
+                }
+
+            ]
+        },
+        {
+            "name": "Jaką miarę na kąt którego cosinus wynosi 1?",
+            "description": "płytka drukowana .",
+            "answers": [
+                {
+                    "description": "0",
+                    "is_correct": true
+                },
+                {
+                    "description": "45",
+                    "is_correct": false
+                },
+                {
+                    "description": "90",
+                    "is_correct": false
+                },
+                {
+                    "description": "30",
+                    "is_correct": false
+                }
+
+            ]
+        },
+        {
+            "name": "Jaka jest pochodna funkcji f(x) = 3x+1?",
+            "description": "karta dźwiękowa.",
+            "answers": [
+                {
+                    "description": "4",
+                    "is_correct": false
+                },
+                {
+                    "description": "3",
+                    "is_correct": true
+                },
+                {
+                    "description": "0",
+                    "is_correct": false
+                },
+                {
+                    "description": "1",
+                    "is_correct": false
+                }
+
+            ]
+        }
+    ],
+    "category": {
+        "name": "Matematyka"
+    }
+}

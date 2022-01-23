@@ -1,0 +1,11 @@
+{% extends "authBase.html" %}
+
+{% block title %}Log Out{% endblock  %}
+
+{% block content %}
+    <p>You have been logged out successfully</p>
+    <div class="linkDefault">
+        <a href="{% url 'welcome' %}">Continue</a>
+    </div>
+{% endblock  %}
+

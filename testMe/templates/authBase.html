@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>SOITA | {% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+</head>
+
+<body style="background-color: #FF0B7E">
+    <div class="titleBar">
+        SOITA
+    </div>
+    <div class="authContent">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
+

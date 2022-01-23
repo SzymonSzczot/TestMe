@@ -1,0 +1,371 @@
+.sidenav {
+    height: 100%;
+    width: 195px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FF0B7E;
+    overflow-x: :hidden;
+    padding-top: 20px;
+    overflow-y: scroll;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEEFE5;
+    display: block;
+    line-height: 1.6;
+}
+
+.sidenav a:hover {
+    color: #00916E;
+}
+
+.sidenav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FEEFE5;
+    display: block;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.sidenav-footer {
+
+}
+
+.main {
+   margin-left: 190px;
+   padding: 0px 40px;
+}
+
+.main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.mainTestContainer {
+    border-radius: 25px;
+    border: 2px solid #FF0B7E;
+    padding: 20px;
+    width: 800px;
+    height: 225px;
+}
+
+.mainTestName {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.mainTestMeta {
+    font-size: 13px;
+    padding-bottom: 15px;
+    color: #808080;
+    /*transform: translate(150%,0%);*/
+    width:100%;
+    text-align:center;
+}
+
+.left {
+    float:left;
+    width: 175px;
+}
+
+.center {
+    display: inline-block;
+    margin:0 auto;
+    width: 175px;
+}
+
+.right {
+    float:right;
+    width: 175px;
+}
+
+.mainTestContainer button {
+    height: 30px;
+    width: 150px;
+    color: #FFF;
+    font-size: 17px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transform: translate(200%,0%);
+}
+
+
+.doubleButton button{
+    height: 30px;
+    width: 150px;
+    color: #FFF;
+    font-size: 17px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transform: translate(150%,0%);
+}
+
+.defaultButton {
+    height: 30px;
+    width: 150px;
+    color: #FFF;
+    font-size: 17px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.defaultButton a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.mainTestContainer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.mainTestDesc{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.mainTestQuest {
+}
+
+.authContent {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    padding: 80px 40px;
+    background-color: #FEEFE5;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #2B3D41;
+}
+
+.authContent h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.authContent h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.authContent p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.authContent input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.authContent input[type=text],
+.authContent input[type=email],
+.authContent input[type=password]{
+    border: none;
+    border-bottom: 1px solid #2B3D41;;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #2B3D41;;
+}
+
+.authContent input[type=submit]{
+    height: 30px;
+    color: #FFF;
+    font-size: 15px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+input[type=checkbox]{
+    width: 20%;
+}
+
+.titleBar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2B3D41;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FEEFE5;
+    display: block;
+}
+
+.authContent button{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+    color: #FFF;
+    font-size: 15px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+background-color:#FF0B7E
+
+.resultContainer{
+    border-radius: 25px;
+    border: 2px solid #FF0B7E;
+    padding: 20px;
+    width: 800px;
+    height: 1000px;
+    padding-bottom: 15px;
+}
+
+.resultImage{
+}
+
+.resultMsg {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.resultScore {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resultText {
+}
+
+.accountInfoContainer{
+    border-radius: 25px;
+    padding: 20px;
+    width: 800px;
+    height: 1000px;
+    padding-bottom: 15px;
+}
+
+.accountInfoName {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accountInfoText {
+}
+
+.accountInfoContainer button{
+    background-color: #00916E;
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 250px; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    border-radius: 25px;
+}
+
+.accountInfoContainer button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.accountInfoContainer button:hover {
+  background-color: #3e8e41;
+}
+
+.accountInfoContainer a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.returnLink{
+    color: #00916E;
+}
+
+.testContent{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.testContent input[type=submit]{
+    height: 30px;
+    width: 150px;
+    color: #FFF;
+    font-size: 17px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.linkDefault {
+    padding-top: 15px;
+}
+
+.linkDefault a {
+    color: #00916E;
+    text-decoration: none;
+}
+
+.newContainer input[type=submit]{
+    height: 30px;
+    width: 150px;
+    color: #FFF;
+    font-size: 17px;
+    background: #00916E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.editContainer {
+    overflow: scroll;
+}
+
+.editContainerLine {
+    padding: 10px 0px 10px 0px;
+}
+
+.editContainerSection {
+    padding-bottom: 15px;
+}
+
+.editContainerSection h2 {
+    display: inline;
+}

@@ -1,0 +1,8 @@
+Color palette:
+#00916E - Illuminating Emerald
+#FEEFE5 - Linen
+#FFCF00 - Cyber Yellow
+#EE6123 - Orange Panteon
+#FA003F - Red Munsell
+
+#FF0B7E - Winter Sky

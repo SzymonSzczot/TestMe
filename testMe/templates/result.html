@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Test result{% endblock  %}
+
+{% block content %}
+    <div class="resultContainer ">
+        <img class="resultImage" src="http://kmit.in/emagazine/wp-content/uploads/2018/02/karnataka-results.jpg" alt="Card image cap">
+        <div class="resultBody">
+            <h5 class="resultMsg">
+                Quite good! All the best for next quiz!
+<!--                {% if max_score == 100 %}-->
+<!--                    Idealnie, widzę że ten temat nie ma dla ciebie tajemnic! -->
+<!--                {% elif max_score >= 75 %}-->
+<!--                    Bardzo dobrze, ale są jeszcze pewne braki ;)-->
+<!--                {% elif max_score >= 50 %}-->
+<!--                    Nie jest źle, wiedziałeś więcej niż mniej-->
+<!--                {% elif max_score >= 25 %}-->
+<!--                    Masz spore braki, powinieneś trochę więcej się pouczyć-->
+<!--                {% else %}-->
+<!--                    Słabiutko, ale następnym razem będzie lepiej-->
+<!--                {% endif %}-->
+            </h5>
+            <h5 class="resultScore">Result: {{ status }}</h5>
+            <h5 class="resultScore">Score: {{ points }}</h5>
+            <button class="defaultButton"><a href="{% url 'home' %}">Home</a></button>
+{#            <p class="resultText">Percentage: 60%</p>#}
+{#            <p class="resultText">Correct answers: 3</p>#}
+{#            <p class="resultText">Incorrect answers: 2</p>#}
+{#            <p class="resultText">Total questions: 5</p>#}
+
+        </div>
+    </div>
+{% endblock  %}
+
